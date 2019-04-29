@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cp -rf ./assets/static ./dist && parcel ./src/index.html",
+    "start": "cp -rf ./assets/static ./dist && parcel ./src/index.html --port 6969",
     "build": "cross-env NODE_ENV=production parcel build ./src/index.html",
     "production": "cp -rf ./assets/static ./dist && cross-env NODE_ENV=production parcel ./src/index.html --port 80"
   },

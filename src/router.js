@@ -26,7 +26,7 @@ class PublicRouter extends Component {
                 <Switch>
                     <Route exact path='/' component={Login} />
                     <Route exact path='/404' component={page404} />
-                    <RestrictedRoute history={this.props.history} exact path='/admin' component={AppAdmin} isLoggedIn={true} />
+                    <RestrictedRoute history={this.props.history} changeLocale={this.changeLocale} exact path='/admin' component={AppAdmin} isLoggedIn={true} />
                     <Redirect from='*' to='/404'/>
                 </Switch>
             </Router>
